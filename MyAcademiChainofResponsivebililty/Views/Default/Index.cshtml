@@ -1,0 +1,21 @@
+﻿@model CusterProcessViewModel
+@{
+    ViewData["Title"] = "Index";
+}
+
+<h1>Para Çekme</h1>
+
+<form method="post">
+    <label>Müşteri Ad Soyad</label>
+    <input type="text" asp-for="Name" class="form-control"/>
+    <br />
+<label>Çekilecek Tutar</label>
+<input type="text" asp-for="Price" class="form-control" />
+<br />
+
+<button class="btn  btn-outline-primary"> Parayı Çek </button>
+
+<h4>@ViewBag.description</h4>
+
+</form>
+
